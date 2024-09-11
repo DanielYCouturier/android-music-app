@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/black"
+    android:orientation="vertical"
+    android:padding="16dp">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/confirm_delete_song"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:paddingBottom="16dp"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/medium_gray"
+        android:padding="16dp">
+        <ImageView
+            android:id="@+id/song_icon"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            app:layout_constraintDimensionRatio="1:1"
+            android:src="@drawable/blank_song"
+            android:layout_gravity="center"
+            android:layout_marginBottom="16dp"
+            android:contentDescription="@string/song_icon"
+            />
+        <TextView
+            android:id="@+id/delete_song_text_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/song_title"
+            android:textColor="@color/white"
+            android:textSize="32sp"
+            android:gravity="center"
+            />
+
+        <TextView
+            android:id="@+id/delete_song_text_artist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/artist"
+            android:textColor="@color/light_gray"
+            android:textSize="24sp"
+            android:gravity="center"
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="?android:attr/buttonBarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+        <Button
+            android:id="@+id/delete_song_cancel_button"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/medium_gray"
+            android:layout_marginHorizontal="5dp"
+            android:text="@string/cancel"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            />
+
+        <Button
+            android:id="@+id/delete_song_confirm_button"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/delete_red"
+            android:layout_marginHorizontal="5dp"
+            android:text="@string/delete"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            />
+    </LinearLayout>
+</LinearLayout>

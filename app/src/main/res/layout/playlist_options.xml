@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/black">
+
+    <Button
+        android:id="@+id/edit_playlist_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/edit_playlist"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/medium_gray"
+        />
+
+    <Button
+        android:id="@+id/delete_playlist_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/delete_playlist"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/delete_red"
+        />
+</LinearLayout>

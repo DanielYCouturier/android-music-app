@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="65dp"
+    android:background="@color/white"
+    android:paddingBottom="1px">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/song_item_background">
+
+        <ImageView
+            android:id="@+id/songIcon"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:scaleType="fitCenter"
+            android:src="@drawable/blank_song"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_margin="8dp"
+            android:contentDescription="@string/song_icon"
+            />
+
+        <LinearLayout
+            android:id="@+id/nameArtistText"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintStart_toEndOf="@id/songIcon"
+            android:layout_marginStart="10dp"
+            app:layout_constraintEnd_toStartOf="@id/song_options_button"
+
+            >
+
+            <TextView
+                android:id="@+id/song_name"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="@string/song_title"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:gravity="start|bottom"
+                android:singleLine="true"
+                android:ellipsize="end"/>
+
+            <TextView
+                android:id="@+id/artist_name"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="@string/artist"
+                android:textSize="16sp"
+                android:textColor="@color/light_gray"
+                android:gravity="start|top"
+                android:singleLine="true"
+                android:ellipsize="end"
+                />
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/song_options_button"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            app:layout_constraintDimensionRatio="1:1"
+            android:src="@drawable/options"
+            android:layout_marginVertical="8dp"
+            android:scaleType="fitCenter"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:contentDescription="@string/song_options"
+            />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
