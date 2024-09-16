@@ -12,6 +12,7 @@ The basic functionalities of the app include the ability to add create playlists
 * Misellaneous helper classes.
 
 This project was originally submitted as a final project for COP 4655 (Application Development for Mobile Devices) (2024)
+![image](https://github.com/user-attachments/assets/2b847dd6-a4d1-4afe-a766-aaa81e6c344e)
 
 ![image](https://github.com/user-attachments/assets/ddf538b0-a39c-4f2d-88c4-7b586bd2571c)
 
